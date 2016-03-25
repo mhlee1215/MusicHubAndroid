@@ -4,6 +4,7 @@ package android.musichub.com.musichubandroid.core;
 import android.media.AudioFormat;
 import android.media.AudioManager;
 import android.media.AudioTrack;
+import android.musichub.com.musichubandroid.ConnectActivity;
 import android.musichub.com.musichubandroid.MainActivity;
 import android.musichub.com.musichubandroid.utils.ThreadController;
 import android.musichub.com.musichubandroid.utils.TimeLookup;
@@ -283,7 +284,7 @@ public class CapitalizeClient {
 			try {
 				if(!isInit){
 
-					Log.i(MainActivity.TAG, "client Name :"+clientName);
+					Log.i(ConnectActivity.TAG, "client Name :"+clientName);
 					out.writeUTF(clientName);
 					out.writeInt(-1000);
 
@@ -541,7 +542,7 @@ public class CapitalizeClient {
 	}
 
 	private static void log(String message) {
-		Log.i(MainActivity.TAG, "[CLIENT] " + message);
+		Log.i(ConnectActivity.TAG, "[CLIENT] " + message);
 	}
 
 }
