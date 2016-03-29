@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goConnect(View view){
-        System.out.println("Hello");
+        System.out.println("Hello??");
         Intent i=new Intent(this,ConnectActivity.class);
         startActivity(i);
     }
